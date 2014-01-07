@@ -1,7 +1,7 @@
-# Logfile created on 2014-01-07 11:20:39 +0000 by logger.rb/31641
-I, [2014-01-07T11:20:39.508601 #8461]  INFO -- : 0:  diff-lcs (1.2.5) from /home/philbo/.rvm/gems/ruby-1.9.3-p448@pg-1/specifications/diff-lcs-1.2.5.gemspec
-I, [2014-01-07T11:20:40.793434 #8461]  INFO -- : 0:  rspec-core (2.14.7) from /home/philbo/.rvm/gems/ruby-1.9.3-p448@pg-1/specifications/rspec-core-2.14.7.gemspec
-I, [2014-01-07T11:20:41.871201 #8461]  INFO -- : 0:  rspec-expectations (2.14.4) from /home/philbo/.rvm/gems/ruby-1.9.3-p448@pg-1/specifications/rspec-expectations-2.14.4.gemspec
-I, [2014-01-07T11:20:42.951276 #8461]  INFO -- : 0:  rspec-mocks (2.14.4) from /home/philbo/.rvm/gems/ruby-1.9.3-p448@pg-1/specifications/rspec-mocks-2.14.4.gemspec
-I, [2014-01-07T11:20:43.847668 #8461]  INFO -- : 0:  rspec (2.14.1) from /home/philbo/.rvm/gems/ruby-1.9.3-p448@pg-1/specifications/rspec-2.14.1.gemspec
-I, [2014-01-07T11:20:43.848183 #8461]  INFO -- : 0:  bundler (1.5.1) from /home/philbo/.rvm/gems/ruby-1.9.3-p448@pg-1/specifications/bundler-1.5.1.gemspec
+# Logfile created on 2014-01-07 11:28:44 +0000 by logger.rb/31641
+I, [2014-01-07T11:28:44.995428 #9130]  INFO -- : 0:  diff-lcs (1.2.5) from /home/philbo/.rvm/gems/ruby-1.9.3-p448@pg-1/specifications/diff-lcs-1.2.5.gemspec
+I, [2014-01-07T11:28:44.995995 #9130]  INFO -- : 0:  rspec-core (2.14.7) from /home/philbo/.rvm/gems/ruby-1.9.3-p448@pg-1/specifications/rspec-core-2.14.7.gemspec
+I, [2014-01-07T11:28:44.996447 #9130]  INFO -- : 0:  rspec-expectations (2.14.4) from /home/philbo/.rvm/gems/ruby-1.9.3-p448@pg-1/specifications/rspec-expectations-2.14.4.gemspec
+I, [2014-01-07T11:28:44.996911 #9130]  INFO -- : 0:  rspec-mocks (2.14.4) from /home/philbo/.rvm/gems/ruby-1.9.3-p448@pg-1/specifications/rspec-mocks-2.14.4.gemspec
+I, [2014-01-07T11:28:45.001380 #9130]  INFO -- : 0:  rspec (2.14.1) from /home/philbo/.rvm/gems/ruby-1.9.3-p448@pg-1/specifications/rspec-2.14.1.gemspec
+I, [2014-01-07T11:28:45.001852 #9130]  INFO -- : 0:  bundler (1.5.1) from /home/philbo/.rvm/gems/ruby-1.9.3-p448@pg-1/specifications/bundler-1.5.1.gemspec
