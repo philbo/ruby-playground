@@ -1,5 +1,8 @@
 SamplePayments::Application.routes.draw do
-  get "account/index"
+  get "accounts/index"
+  root "home#index"
+
+  resources :accounts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
