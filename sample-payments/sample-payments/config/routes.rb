@@ -1,4 +1,5 @@
 SamplePayments::Application.routes.draw do
+  get "products/index"
   get "accounts/index"
   root "home#index"
 
