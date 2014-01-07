@@ -1,6 +1,6 @@
 <h1>Products</h1>
  
-	<table>
+<table>
 	<tr>
 		<th>Title</th>
 		<th>Price</th>
@@ -12,7 +12,7 @@
 	<tr>
 		<td><%= product.id %></td>
 		<td><%= product.title %></td>
-		<td><%= product.price %></td>
+		<td><%= number_to_currency(product.price.to_f, unit: "£", precision: 2) %></td>
 		<td><%= link_to 'Show', product %></td>
 		<td><%= link_to 'Edit', edit_product_path(product) %></td>
 	</tr>

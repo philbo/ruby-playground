@@ -1,4 +1,5 @@
 SamplePayments::Application.routes.draw do
+  get "purchases/index"
   get "products/index"
   get "accounts/index"
   root "home#index"
@@ -10,6 +11,11 @@ SamplePayments::Application.routes.draw do
   resources :products do
     resources :purchases
   end
+
+  resources :purchases
+
+  #post "purchases/:id" => "purchases#create"
+  #get "products/:id/purchase" => "products#purchase"-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
