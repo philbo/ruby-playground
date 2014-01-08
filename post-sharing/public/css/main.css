@@ -1,0 +1,29 @@
+ul {
+	list-style-type: none;
+	padding:0;margin:0;
+}
+
+.fb-feed {
+	background-color: #f2f2f2;
+	border:1px solid #555;
+	margin:15px 3px;
+	padding:10px 15px;
+}
+
+.fb-feed>ul {
+	
+}
+
+.fb-feed>ul>li {
+	padding:7px;
+	border-bottom: 1px dotted #999;
+}
+
+.fb-feed .fb-message {
+	font-size:21px;
+}
+
+.fb-feed .fb-message-footer {
+	font-size:15px;
+	xpadding-left:5px;
+}

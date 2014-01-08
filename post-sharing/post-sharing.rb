@@ -3,6 +3,8 @@ require "sinatra/reloader"
 require "koala"
 require "json"
 
+set :public_folder, 'public'
+
 get "/" do
 	if params[:oauth_access_token]
 		begin

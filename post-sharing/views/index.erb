@@ -2,6 +2,9 @@
 <html>
 <head>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="/js/main.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 <body>
 	<div id="fb-root"></div>
@@ -19,65 +22,19 @@
 			</fieldset>
 		</form>
 	</div>
-	<div id="fb-feed">
+	<div class="fb-feed">
 		<ul>
 			<% if @fb_feed %>
 				<% @fb_feed.each do |item| %>
 					<li>
 						<ul>
-							<li><%= item["message"] %></li>
-							<li>by <%= item["from"]["name"] %> on <em><%= item["created_time"] %></em></li>
+							<li class="fb-message"><%= item["message"] %></li>
+							<li class="fb-message-footer">by <%= item["from"]["name"] %> on <em><%= item["created_time"] %></em></li>
 						</ul>
 					</li>
 				<% end %>
 			<% end %>
 		<ul>
 	</div>
-	<script>
-	  window.fbAsyncInit = function() {
-
-	    FB.init({
-	      appId      : '183003591910669',                        // App ID from the app dashboard
-	      status     : true,                                 // Check Facebook Login status
-	      xfbml      : true                                  // Look for social plugins on the page
-	    });
-	    
-	    FB.Event.subscribe('auth.authResponseChange', function(response) {
-	    	console.log(response)
-			if (response.status === 'connected') {
-				$("#sharing-submit").show();
-				$("#sharing-authtoken").val(response.authResponse.accessToken);
-			} else if (response.status === 'not_authorized') {
-				FB.login(function(response) {
-   					// handle the response
- 				}, {scope: 'email,publish_actions'});
-			} else {
-				FB.login(function(response) {
-   					// handle the response
- 				}, {scope: 'email,publish_actions'});
-			}
-		});
-
-	  };
-
-	  // Load the SDK asynchronously
-	  (function(){
-	     // If we've already installed the SDK, we're done
-	     if (document.getElementById('facebook-jssdk')) {return;}
-
-	     // Get the first script element, which we'll use to find the parent node
-	     var firstScriptElement = document.getElementsByTagName('script')[0];
-
-	     // Create a new script element and set its id
-	     var facebookJS = document.createElement('script'); 
-	     facebookJS.id = 'facebook-jssdk';
-
-	     // Set the new script's source to the source of the Facebook JS SDK
-	     facebookJS.src = '//connect.facebook.net/en_GB/all.js';
-
-	     // Insert the Facebook JS SDK into the DOM
-	     firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
-	   }());
-	</script>
 </body>
 </html>
