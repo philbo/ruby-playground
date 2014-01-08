@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<h1><%= text %></h1>
+	<form id="sharing-form" name="sharing-form" method="post" action="/share">
+		<fieldset>
+			<p>
+				<label for"sharing-text">Enter the text you wish to share:</label><br>
+				<textarea id="sharing-text" rows="10" autofocus cols="50" form="sharing-form" name="sharing-text"></textarea>
+			</p>
+			<button id="sharing-submit" name="sharing-submit">Post to your Facebook wall</button>
+		</fieldset>
+</body>
+</html>
