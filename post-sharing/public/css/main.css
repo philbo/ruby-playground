@@ -3,15 +3,18 @@ ul {
 	padding:0;margin:0;
 }
 
-.fb-feed {
+.fb-form, .fb-feed {
 	background-color: #f2f2f2;
+}
+
+.fb-form {
+	margin-bottom:35px;
+}
+
+.fb-feed {
 	border:1px solid #555;
 	margin:15px 3px;
 	padding:10px 15px;
-}
-
-.fb-feed>ul {
-	
 }
 
 .fb-feed>ul>li {
@@ -25,5 +28,4 @@ ul {
 
 .fb-feed .fb-message-footer {
 	font-size:15px;
-	xpadding-left:5px;
 }

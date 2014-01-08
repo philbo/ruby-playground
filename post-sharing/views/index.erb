@@ -9,7 +9,7 @@
 <body>
 	<div id="fb-root"></div>
 	<h1><%= text %></h1>
-	<div>
+	<div class="fb-form">
 		<form id="sharing-form" name="sharing-form" method="post" action="/share">
 			<fieldset>
 				<p>
@@ -22,19 +22,22 @@
 			</fieldset>
 		</form>
 	</div>
-	<div class="fb-feed">
-		<ul>
-			<% if @fb_feed %>
+	<% if @fb_feed %>
+		<h3>Your Facebook feed</h3>
+		<div class="fb-feed">
+			<ul>
 				<% @fb_feed.each do |item| %>
+					<% if item["message"] %>
 					<li>
 						<ul>
 							<li class="fb-message"><%= item["message"] %></li>
 							<li class="fb-message-footer">by <%= item["from"]["name"] %> on <em><%= item["created_time"] %></em></li>
 						</ul>
 					</li>
+					<% end %>
 				<% end %>
-			<% end %>
-		<ul>
-	</div>
+			<ul>
+		</div>
+	<% end %>
 </body>
 </html>

@@ -11,11 +11,11 @@ get "/" do
 			@graph = Koala::Facebook::API.new(params[:oauth_access_token])
 
 			@fb_feed = @graph.get_connections("me", "feed")
-
-			erb :index, :locals => {:text => "Hello, Bob Diamond"}
 		rescue => exception
-	  		return exception.to_s
+	  		puts exception.to_s
 		end
+
+		erb :index, :locals => {:text => "Hello, Bob Diamond"}
 	end
 
 	erb :index, :locals => {:text => "Hello, Bob Diamond"}
