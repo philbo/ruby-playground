@@ -9,3 +9,8 @@ gem 'thin'
 gem "httparty"
 
 gem "shotgun"
+
+gem "shoulda"
+gem "shoulda-context"
+
+gem "mocha"

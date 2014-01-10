@@ -6,8 +6,8 @@ class GooglePlacesAPI
 	base_uri 'https://maps.googleapis.com/maps/api/place'
 	default_params :sensor => "false"
 
-	def initialize()
-		self.class.default_params :key => "AIzaSyDO5wsQu2uuJrSblYlg0lwtWQ7ngLf0jn4"
+	def initialize(key)
+		self.class.default_params :key => key
 	end
 
 	def autocomplete(options={})

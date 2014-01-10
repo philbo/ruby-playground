@@ -55,7 +55,7 @@ function renderResults(data) {
 	var output = "<ul>";
 	var location = "";
 	$.each(data["predictions"], function(i, item) {
-		output += "<li><a onclick='getDetails(\"" + item["reference"] + "\")'>" + item["description"] + "</a></li>";
+		output += "<li><a href='#' onclick='getDetails(\"" + item["reference"] + "\")';>" + item["description"] + "</a></li>";
 	});
 	output += "</ul>";
 
@@ -76,9 +76,6 @@ function drawMap(lat, lng) {
 	    map: map,
 	    title:"Hello World!"
 	});
-
-	//var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 }
 
-//google.maps.event.addDomListener(window, 'load', drawMap);
 $(document).ready(init);
