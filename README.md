@@ -1,2 +1,4 @@
-ruby-playground
+Ruby-Playground
 ===============
+
+Various ruby based projects
