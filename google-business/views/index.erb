@@ -2,15 +2,35 @@
 <html>
 <head>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO5wsQu2uuJrSblYlg0lwtWQ7ngLf0jn4&sensor=false"></script>
 	<script src="/js/main.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0; }
+      .map-container {
+      	width:50%;
+      	height:50%;
+      	float:right;
+      }
+      .search-container {
+      	float:left;
+      	width:50%;
+      }
+      #map-canvas { height:100%; }
+    </style>
 </head>
 <body>
-	<form id="g-search" name="g-search" method="post" action="/search">
-		<input type="input" name="g-search-text" value="spearmint" />
-		<button id="g-submit" name="g-submit">Go baby go</button>
-	</form>
-	<div id="search-results"></div>
+	<div class="search-container">
+		<form id="g-search" name="g-search" method="post" action="/search">
+			<input type="input" name="g-search-text" value="spearmint" />
+			<button id="g-submit" name="g-submit">Go baby go</button>
+		</form>
+		<div id="search-results"></div>
+	</div>
+	<div class="map-container">
+		<div id="map-canvas" />
+	</div>
 </body>
 </html>
